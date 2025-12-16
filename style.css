@@ -1,0 +1,103 @@
+body {
+    background:  no-repeat center center fixed;
+    padding-top: 60px;
+    position: relative;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+.navbar-custom {
+      background-color: rgb(62, 35, 110);
+}
+
+.container {
+    background-color: white;
+}
+
+.timeline-entry{
+    position:relative;
+    margin-top:15px;
+    margin-bottom:0px;
+    padding: 10px 0px 10px 0px;
+    left:0px;
+    background: white;
+    display:inline-block;
+    border-radius:0px;
+    border:2px solid rgb(0, 0, 0);
+    width:100%;
+}
+
+.timeline-date{
+    position:relative;
+    left:5px;
+    width:100%;
+    top:25px;
+    margin-bottom:15px;
+}
+
+@media (min-width: 300px) {
+hr.timeline-sep{
+    top: -200px;
+}
+}
+@media (min-width: 576px) {
+hr.timeline-sep{
+    position:relative;
+    top: -6px;
+    border-radius: 5px;
+}
+}
+
+hr{
+    margin-top:20px;
+    margin-bottom:20px;
+    border-radius: 1px;
+    border-top: 1px solid rgb(62, 35, 110);
+    /*border-top: 1px solid rgb(0, 120, 206);*/
+}
+
+.timeline{
+    margin-top:-20px;
+    position:relative;
+    margin-bottom: 15px;
+}
+
+.timeline:before{
+    position:absolute;
+    content:'';
+    width:6px;
+    height:calc(100% - 15px);
+    background: rgb(62, 35, 110);
+    /*background: rgb(0, 78, 134);*/
+    left:40px;
+    top:25px;
+    border-radius:100px;
+}
+
+.link-target{
+    margin-top: -60px;
+    position: absolute;
+}
+
+.anchor{
+    position: absolute;
+    top: -60px;
+    visibility: hidden;
+}
+/*a:link {
+  color: ;
+}
+
+a:visited {
+  color: rgb(48, 24, 52);
+}
+
+a:hover {
+  color:
+}
+
+a:active {
+  color:
+}~/
