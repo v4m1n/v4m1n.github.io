@@ -1,581 +1,151 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-        <link rel="stylesheet" href="style.css">
-
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-        <title>Fabian Rauscher</title>
-        <meta name="description" content="Fabian Rauscher, postdoc at TU Graz. Low-level systems security: side channels and microarchitectural attacks on CPUs, TEEs, and hypervisors.">
-        <meta property="og:title" content="Fabian Rauscher">
-        <meta property="og:description" content="Postdoc at TU Graz. Low-level systems security: side channels and microarchitectural attacks on CPUs, TEEs, and hypervisors.">
-        <meta property="og:image" content="https://fabianrauscher.com/images/profile.jpg">
-        <meta property="og:url" content="https://fabianrauscher.com/">
-        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-        <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
-        <link rel="apple-touch-icon" href="images/favicon-192.png">
-
-    </head>
-    <body data-spy="scroll" data-target="#navbar" data-offset="0">
-
-        <!-- NAVBAR -->
-        <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top" id="navbar">
-            <a class="navbar-brand" href="#">Fabian Rauscher</a>
-            
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse nav-pills" id="navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
-    Papers
-  </a>
-  <div class="dropdown-menu" id="papers-menu">
-    <a class="dropdown-item" href="#papers2026">2026</a>
-    <a class="dropdown-item" href="#papers2025">2025</a>
-    <a class="dropdown-item" href="#papers2024">2024</a>
-    <a class="dropdown-item" href="#papers2023">2023</a>
-    <a class="dropdown-item" href="#papers2022">2022</a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fabian Rauscher</title>
+  <meta name="description" content="Fabian Rauscher, postdoc at TU Graz. Low-level systems security: side channels and microarchitectural attacks on CPUs, TEEs, and hypervisors.">
+  <meta property="og:title" content="Fabian Rauscher">
+  <meta property="og:description" content="Postdoc at TU Graz. Low-level systems security: side channels and microarchitectural attacks on CPUs, TEEs, and hypervisors.">
+  <meta property="og:image" content="https://fabianrauscher.com/images/profile.jpg">
+  <meta property="og:url" content="https://fabianrauscher.com/">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+  <link rel="apple-touch-icon" href="images/favicon-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <img src="images/profile.jpg" alt="Hedgehog illustration" width="112" height="112">
+  <div>
+    <h1>Fabian Rauscher</h1>
+    <p class="role">Postdoc, TU Graz</p>
+    <ul class="links">
+      <li><a href="https://github.com/v4m1n"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a></li>
+      <li><a href="https://x.com/v4m1n"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>X</a></li>
+      <li><a href="https://scholar.google.com/citations?user=h-c-Xg8AAAAJ"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.749-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>Scholar</a></li>
+      <li><a href="https://www.linkedin.com/in/fabian-rauscher-0524a4178/"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a></li>
+      <li><a href="mailto:fabian@x86.fail"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 6h18v12H3z M3 7l9 6 9-6"/></svg>fabian@x86.fail</a></li>
+    </ul>
   </div>
-</li>
+</header>
 
-                </ul>
-            </div>
-        </nav>
-        
-        <div class="container">
-                
-            <!-- About Me -->
-            <div class="link-target" id="about_me"></div>
+<main>
+  <p class="bio">I'm a postdoc in the CoreSec group at <a href="https://isec.tugraz.at">TU Graz</a>, where I did my PhD with <a href="https://gruss.cc/">Daniel Gruss</a>. I work on low-level systems security, mainly side channels and microarchitectural attacks on CPUs, trusted execution environments like Intel TDX, and hypervisors. I also teach operating systems, system-level programming, and hypervisor development.</p>
 
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-10">
-                <h3><i class="fa fa-user"></i>
-                    About Me:
-                </h3>
-                </div>
-                <div class="col-md-1"></div>
-            </div>
-        
-            <!-- Example row of columns -->
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-2">
-                    
-                    <!-- Image -->
-                    <div class="row">
-                        <div class="col-xs-12">
-                        <img src="images/profile.jpg" alt="Hedgehog illustration" class="img-fluid rounded-circle">
-                        </div>
-                    </div>
-            
-                    <!-- Icons -->
-                    <div class="row">
-                        
-                        <span class="fa-stack fa-lg">
-                        <a href="https://github.com/v4m1n">
-                            <i class="fa fa-github fa-stack-1x "></i>
-                        </a>
-                        </span>
-                        
-                        <span class="fa-stack fa-lg">
-                        <a href="https://x.com/v4m1n">
-                            <i class="fa fa-twitter fa-stack-1x "></i>
-                        </a>
-                        </span>
-                        
-                        <span class="fa-stack fa-lg">
-                        <a href="https://scholar.google.com/citations?user=h-c-Xg8AAAAJ">
-                            <i class="fa fa-google fa-stack-1x"></i>
-                        </a>
-                        </span>
-                        
-                    
-                    </div>
-                </div>
-                
-                <!-- Description -->
-                <div class="col-md-7">
-                  <p>I'm a postdoc in the CoreSec group at <a href="https://isec.tugraz.at">TU Graz</a>, where I did my PhD with <a href="https://gruss.cc/">Daniel Gruss</a>. I work on low-level systems security, mainly side channels and microarchitectural attacks on CPUs, trusted execution environments like Intel TDX, and hypervisors. I also teach operating systems, system-level programming, and hypervisor development.</p>
-                    <p>E-Mail: contact (at) responsible (dot) fyi</p>
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-    
-            <div id="papers" class="row">
-  <div class="col-md-1">
-  </div>
-  <div class="col-md-10">
-    <hr>
-    <h3 >
-      <i class="fa fa-file">
-      </i>
-      Publications
-    </h3>
-  </div>
-  <div class="col-md-1">
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-1">
-  </div>
-  <div class="col-md-10">
-    <div class="timeline">
-      <div class="row">
-        <div class="timeline-date">
-          <span id="papers2026" class="anchor">
-          </span>
-          <div class="col-xs-1">
-            <b class="hi">
-              2026
-            </b>
-          </div>
-          <div class="col-xs-11">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="timeline-entry">
-          <div class="col-md-1">
-          </div>
-          <div class="col-md-11">
-            <i class="fa fa-file">
-            </i>
-            <a class="title" href="papers/frost.pdf">
-              FROST: Fingerprinting Remotely using OPFS-based SSD Timing
-            </a>
-            <br>
-            <small >
-              Hannes Weissteiner, Tobias Weiser, Roland Czerny, Sudheendra Raghav Neela, <b>Fabian Rauscher</b>, Jonas Juffinger, Daniel Gruss
-              <br>
-              <a class="title" href="https://www.dimva.org/dimva2026/" style="color:#000000;">
-              DIMVA '26
-              </a>
-              <br>
-            </small>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="timeline-entry">
-          <div class="col-md-1">
-          </div>
-          <div class="col-md-11">
-            <i class="fa fa-file">
-            </i>
-            <a class="title" href="papers/phdthesis.pdf">
-              Advancing CPU Security through Attack Discovery and Systematization - PhD Thesis
-            </a>
-            <br>
-            <small>
-              <b>Fabian Rauscher</b>
-              <br>
-              Assessors: Daniel Gruss, Jo Van Bulck
-              <br>
-              Graz University of Technology, May 2026
-            </small>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="timeline-entry">
-          <div class="col-md-1">
-          </div>
-          <div class="col-md-11">
-            <i class="fa fa-file">
-            </i>
-            <a class="title" href="papers/telescope.pdf">
-              TELESCOPE: TDX Exploit Leaking Encrypted Data using Sibling Core Performance Counters
-            </a>
-            <br>
-            <small >
-              <b>Fabian Rauscher</b>, Hannes Weissteiner, Daniel Gruss
-              <br>
-              <a class="title" href="https://asiaccs2026.cse.iitkgp.ac.in" style="color:#000000;">
-              ASIA CCS '26
-              </a>
-              <br>
-            </small>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="timeline-date">
-          <span id="papers2025" class="anchor">
-          </span>
-          <div class="col-xs-1">
-            <b class="hi">
-              2025
-            </b>
-          </div>
-          <div class="col-xs-11">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="timeline-entry">
-          <div class="col-md-1">
-          </div>
-          <div class="col-md-11">
-            <i class="fa fa-file">
-            </i>
-            <a class="title" href="papers/waitwatcher.pdf">
-              WaitWatcher & WaitGuard: Detecting Flush-Based Cache Side-Channels through Spurious Wakeups
-            </a>
-            <br>
-            <small>
-              Lukas Lamster, <b>Fabian Rauscher</b>, Martin Unterguggenberger, Stefan Mangard
-              <br>
-              <a class="title" href="https://esorics2025.sciencesconf.org" style="color:#000000;">
-              ESORICS '25
-              </a>
-              <br>
-            </small>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="timeline-entry">
-          <div class="col-md-1">
-          </div>
-          <div class="col-md-11">
-            <i class="fa fa-file">
-            </i>
-            <a class="title" href="papers/dramaddressing.pdf">
-              Verifying DRAM Addressing in Software
-            </a>
-            <br>
-            <small>
-              Martin Heckel, Florian Adamsky, Jonas Juffinger, <b>Fabian Rauscher</b>, Daniel Gruss
-              <br>
-              <a class="title" href="https://esorics2025.sciencesconf.org" style="color:#000000;">
-              ESORICS '25
-              </a>
-              <br>
-            </small>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="timeline-entry">
-          <div class="col-md-1">
-          </div>
-          <div class="col-md-11">
-            <i class="fa fa-file">
-            </i>
-            <a class="title" href="papers/tdxploit.pdf">
-              TDXploit: Novel Techniques for Single-Stepping and Cache Attacks on Intel TDX
-            </a>
-            <br>
-            <small >
-              <b>Fabian Rauscher</b>, Luca Wilke, Hannes Weissteiner, Thomas Eisenbarth, Daniel Gruss
-              <br>
-              Award:
-              <a class="title" href="https://www.usenix.org/sites/default/files/sec25_honorable_mentions.pdf" style="color:#000000;">
-              Distinguished Paper (Honorable Mention),
-              </a>
-              <a class="title" href="https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01312.html" style="color:#000000;">
-              CVE-2025-20613
-              </a>
-              <br>
-              <a class="title" href="https://www.usenix.org/conference/usenixsecurity25" style="color:#000000;">
-              USENIX Security Symposium '25 (AR: 17.1%)
-              </a>
-              <br>
-            </small>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="timeline-entry">
-          <div class="col-md-1">
-          </div>
-          <div class="col-md-11">
-            <i class="fa fa-file">
-            </i>
-            <a class="title" href="papers/teecorrelate.pdf">
-              TEEcorrelate: An Information-Preserving Defense against Performance-Counter Attacks on TEEs
-            </a>
-            <br>
-            <small >
-              Hannes Weissteiner, <b>Fabian Rauscher</b>, Robin Leander Schröder, Jonas Juffinger, Stefan Gast, Jan Wichelmann, Thomas Eisenbarth, Daniel Gruss
-              <br>
-              <a class="title" href="https://www.usenix.org/conference/usenixsecurity25" style="color:#000000;">
-              USENIX Security Symposium '25 (AR: 17.1%)
-              </a>
-              <br>
-            </small>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="timeline-entry">
-          <div class="col-md-1">
-          </div>
-          <div class="col-md-11">
-            <i class="fa fa-file">
-            </i>
-            <a class="title" href="papers/powerkernel.pdf">
-              Systematic Analysis of Kernel Security Performance and Energy Costs
-            </a>
-            <br>
-            <small >
-              <b>Fabian Rauscher</b>, Benedict Herzog, Timo Hönig, Daniel Gruss
-              <br>
-              <a class="title" href="https://asiaccs2025.hust.edu.vn" style="color:#000000;">
-              ASIA CCS '25 (AR: 20.4%)
-              </a>
-              <br>
-            </small>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="timeline-entry">
-          <div class="col-md-1">
-          </div>
-          <div class="col-md-11">
-            <i class="fa fa-file">
-            </i>
-            <a class="title" href="papers/demote.pdf">
-              A Systematic Evaluation of Novel and Existing Cache Side Channels
-            </a>
-            <br>
-            <small >
-              <b>Fabian Rauscher</b>, Carina Fiedler, Andreas Kogler, Daniel Gruss
-              <br>
-              <a class="title" href="https://www.ndss-symposium.org/ndss2025/" style="color:#000000;">
-              NDSS '25 (AR: 16.5%)
-              </a>
-              <br>
-            </small>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="timeline-entry">
-          <div class="col-md-1">
-          </div>
-          <div class="col-md-11">
-            <i class="fa fa-file">
-            </i>
-            <a class="title" href="papers/ssd.pdf">
-              Secret Spilling Drive: Leaking User Behavior through SSD Contention
-            </a>
-            <br>
-            <small >
-              Jonas Juffinger, <b>Fabian Rauscher</b>, Giuseppe La Manna, Daniel Gruss
-              <br>
-              <a class="title" href="https://www.ndss-symposium.org/ndss2025/" style="color:#000000;">
-              NDSS '25 (AR: 16.5%)
-              </a>
-              <br>
-            </small>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="timeline-date">
-          <span id="papers2024" class="anchor">
-          </span>
-          <div class="col-xs-1">
-            <b class="hi">
-              2024
-            </b>
-          </div>
-          <div class="col-xs-11">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="timeline-entry">
-          <div class="col-md-1">
-          </div>
-          <div class="col-md-11">
-            <i class="fa fa-file">
-            </i>
-            <a class="title" href="papers/uintr.pdf">
-              Cross-Core Interrupt Detection: Exploiting User and Virtualized IPIs
-            </a>
-            <br>
-            <small >
-              <b>Fabian Rauscher</b>, Daniel Gruss
-              <br>
-              <a class="title" href="https://www.sigsac.org/ccs/CCS2024/" style="color:#000000;">
-              CCS '24 (AR: 16.7%)
-              </a>
-              <br>
-            </small>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="timeline-entry">
-          <div class="col-md-1">
-          </div>
-          <div class="col-md-11">
-            <i class="fa fa-file">
-            </i>
-            <a class="title" href="papers/snailload.pdf">
-              SnailLoad: Exploiting Remote Network Latency Measurements without JavaScript
-            </a>
-            <br>
-            <small >
-              Stefan Gast, Roland Czerny, Jonas Juffinger, <b>Fabian Rauscher</b>, Simone Franza, Daniel Gruss
-              <br>
-              <a class="title" href="https://nvd.nist.gov/vuln/detail/CVE-2024-39920" style="color:#000000;">
-              CVE-2024-39920
-              </a>
-              <br>
-              <a class="title" href="https://www.usenix.org/conference/usenixsecurity24" style="color:#000000;">
-              USENIX Security Symposium '24 (AR: 18.3%)
-              </a>
-              <br>
-            </small>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="timeline-entry">
-          <div class="col-md-1">
-          </div>
-          <div class="col-md-11">
-            <i class="fa fa-file">
-            </i>
-            <a class="title" href="papers/webgpu.pdf">
-              Generic and Automated Drive-by GPU Cache Attacks from the Browser
-            </a>
-            <br>
-            <small >
-              Lukas Giner, Roland Czerny, Christoph Gruber, <b>Fabian Rauscher</b>, Andreas Kogler, Daniel De Almeida Braga, Daniel Gruss
-              <br>
-              Award: Best Paper
-              <br>
-              ASIA CCS '24 (AR: 22.1%)
-              <br>
-            </small>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="timeline-entry">
-          <div class="col-md-1">
-          </div>
-          <div class="col-md-11">
-            <i class="fa fa-file">
-            </i>
-            <a class="title" href="papers/idleleak.pdf">
-              IdleLeak: Exploiting Idle State Side Effects for Information Leakage
-            </a>
-            <br>
-            <small >
-              <b>Fabian Rauscher</b>, Andreas Kogler, Jonas Juffinger, Daniel Gruss
-              <br>
-              <a class="title" href="https://www.ndss-symposium.org/ndss2024/" style="color:#000000;">
-              NDSS '24 (AR: 20.6%)
-              </a>
-              <br>
-            </small>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="timeline-date">
-          <span id="papers2023" class="anchor">
-          </span>
-          <div class="col-xs-1">
-            <b class="hi">
-              2023
-            </b>
-          </div>
-          <div class="col-xs-11">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="timeline-entry">
-          <div class="col-md-1">
-          </div>
-          <div class="col-md-11">
-            <i class="fa fa-file">
-            </i>
-            <a class="title" href="papers/dope.pdf">
-              DOPE: DOmain Protection Enforcement with PKS
-            </a>
-            <br>
-            <small>
-              Lukas Maar, Martin Schwarzl, <b>Fabian Rauscher</b>, Daniel Gruss, Stefan Mangard
-              <br>
-              <a class="title" href="https://www.acsac.org/2023/" style="color:#000000;">
-              ACSAC '23 (AR: 23.3%)
-              </a>
-              <br>
-            </small>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="timeline-date">
-          <span id="papers2022" class="anchor">
-          </span>
-          <div class="col-xs-1">
-            <b class="hi">
-              2022
-            </b>
-          </div>
-          <div class="col-xs-11">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="timeline-entry">
-          <div class="col-md-1">
-          </div>
-          <div class="col-md-11">
-            <i class="fa fa-file">
-            </i>
-            <a class="title" href="papers/masterthesis.pdf">
-              GPU Cache Attacks - Master's Thesis
-            </a>
-            <br>
-            <small>
-              <b>Fabian Rauscher</b>
-              <br>
-              Graz University of Technology, November 2022
-            </small>
-          </div>
-        </div>
-      </div>
+  <section id="publications">
+    <div class="section-head">
+      <h2>Publications</h2>
+      <nav class="years" aria-label="Jump to year"><a href="#y2026">2026</a> <a href="#y2025">2025</a> <a href="#y2024">2024</a> <a href="#y2023">2023</a> <a href="#y2022">2022</a></nav>
     </div>
-  </div>
-  <div class="col-md-1">
-  </div>
-</div>
+    <h2 class="year" id="y2026">2026</h2>
+    <article class="pub">
+      <h3><a href="papers/frost.pdf">FROST: Fingerprinting Remotely using OPFS-based SSD Timing</a></h3>
+      <p class="authors">Hannes Weissteiner, Tobias Weiser, Roland Czerny, Sudheendra Raghav Neela, <b>Fabian Rauscher</b>, Jonas Juffinger, Daniel Gruss</p>
+      <p class="meta"><a href="https://www.dimva.org/dimva2026/">DIMVA &#x27;26</a>
+        <span class="files"><a href="papers/frost.pdf">PDF</a> <a href="bib/weissteiner2026frost.bib">BibTeX</a></span></p>
+    </article>
+    <article class="pub">
+      <h3><a href="papers/phdthesis.pdf">Advancing CPU Security through Attack Discovery and Systematization</a></h3>
+      <p class="authors"><b>Fabian Rauscher</b></p>
+      <p class="authors">Assessors: Daniel Gruss, Jo Van Bulck</p>
+      <p class="meta">PhD thesis, Graz University of Technology, May 2026
+        <span class="files"><a href="papers/phdthesis.pdf">PDF</a> <a href="bib/rauscher2026phdthesis.bib">BibTeX</a></span></p>
+    </article>
+    <article class="pub">
+      <h3><a href="papers/telescope.pdf">TELESCOPE: TDX Exploit Leaking Encrypted Data using Sibling Core Performance Counters</a></h3>
+      <p class="authors"><b>Fabian Rauscher</b>, Hannes Weissteiner, Daniel Gruss</p>
+      <p class="meta"><a href="https://asiaccs2026.cse.iitkgp.ac.in">ASIA CCS &#x27;26</a>
+        <span class="files"><a href="papers/telescope.pdf">PDF</a> <a href="bib/rauscher2026telescope.bib">BibTeX</a></span></p>
+    </article>
+    <h2 class="year" id="y2025">2025</h2>
+    <article class="pub">
+      <h3><a href="papers/waitwatcher.pdf">WaitWatcher &amp; WaitGuard: Detecting Flush-Based Cache Side-Channels through Spurious Wakeups</a></h3>
+      <p class="authors">Lukas Lamster, <b>Fabian Rauscher</b>, Martin Unterguggenberger, Stefan Mangard</p>
+      <p class="meta"><a href="https://esorics2025.sciencesconf.org">ESORICS &#x27;25</a>
+        <span class="files"><a href="papers/waitwatcher.pdf">PDF</a> <a href="bib/lamster2025waitwatcher.bib">BibTeX</a></span></p>
+    </article>
+    <article class="pub">
+      <h3><a href="papers/dramaddressing.pdf">Verifying DRAM Addressing in Software</a></h3>
+      <p class="authors">Martin Heckel, Florian Adamsky, Jonas Juffinger, <b>Fabian Rauscher</b>, Daniel Gruss</p>
+      <p class="meta"><a href="https://esorics2025.sciencesconf.org">ESORICS &#x27;25</a>
+        <span class="files"><a href="papers/dramaddressing.pdf">PDF</a> <a href="bib/heckel2025dram.bib">BibTeX</a></span></p>
+    </article>
+    <article class="pub">
+      <h3><a href="papers/tdxploit.pdf">TDXploit: Novel Techniques for Single-Stepping and Cache Attacks on Intel TDX</a></h3>
+      <p class="authors"><b>Fabian Rauscher</b>, Luca Wilke, Hannes Weissteiner, Thomas Eisenbarth, Daniel Gruss</p>
+      <p class="meta"><a href="https://www.usenix.org/conference/usenixsecurity25">USENIX Security &#x27;25 (AR: 17.1%)</a> <a class="badge" href="https://www.usenix.org/sites/default/files/sec25_honorable_mentions.pdf">Distinguished Paper (Honorable Mention)</a> <a class="badge" href="https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01312.html">CVE-2025-20613</a>
+        <span class="files"><a href="papers/tdxploit.pdf">PDF</a> <a href="bib/rauscher2025tdxploit.bib">BibTeX</a></span></p>
+    </article>
+    <article class="pub">
+      <h3><a href="papers/teecorrelate.pdf">TEEcorrelate: An Information-Preserving Defense against Performance-Counter Attacks on TEEs</a></h3>
+      <p class="authors">Hannes Weissteiner, <b>Fabian Rauscher</b>, Robin Leander Schröder, Jonas Juffinger, Stefan Gast, Jan Wichelmann, Thomas Eisenbarth, Daniel Gruss</p>
+      <p class="meta"><a href="https://www.usenix.org/conference/usenixsecurity25">USENIX Security &#x27;25 (AR: 17.1%)</a>
+        <span class="files"><a href="papers/teecorrelate.pdf">PDF</a> <a href="bib/weissteiner2025teecorrelate.bib">BibTeX</a></span></p>
+    </article>
+    <article class="pub">
+      <h3><a href="papers/powerkernel.pdf">Systematic Analysis of Kernel Security Performance and Energy Costs</a></h3>
+      <p class="authors"><b>Fabian Rauscher</b>, Benedict Herzog, Timo Hönig, Daniel Gruss</p>
+      <p class="meta"><a href="https://asiaccs2025.hust.edu.vn">ASIA CCS &#x27;25 (AR: 20.4%)</a>
+        <span class="files"><a href="papers/powerkernel.pdf">PDF</a> <a href="bib/rauscher2025kernel.bib">BibTeX</a></span></p>
+    </article>
+    <article class="pub">
+      <h3><a href="papers/demote.pdf">A Systematic Evaluation of Novel and Existing Cache Side Channels</a></h3>
+      <p class="authors"><b>Fabian Rauscher</b>, Carina Fiedler, Andreas Kogler, Daniel Gruss</p>
+      <p class="meta"><a href="https://www.ndss-symposium.org/ndss2025/">NDSS &#x27;25 (AR: 16.5%)</a>
+        <span class="files"><a href="papers/demote.pdf">PDF</a> <a href="bib/rauscher2025cache.bib">BibTeX</a></span></p>
+    </article>
+    <article class="pub">
+      <h3><a href="papers/ssd.pdf">Secret Spilling Drive: Leaking User Behavior through SSD Contention</a></h3>
+      <p class="authors">Jonas Juffinger, <b>Fabian Rauscher</b>, Giuseppe La Manna, Daniel Gruss</p>
+      <p class="meta"><a href="https://www.ndss-symposium.org/ndss2025/">NDSS &#x27;25 (AR: 16.5%)</a>
+        <span class="files"><a href="papers/ssd.pdf">PDF</a> <a href="bib/juffinger2025ssd.bib">BibTeX</a></span></p>
+    </article>
+    <h2 class="year" id="y2024">2024</h2>
+    <article class="pub">
+      <h3><a href="papers/uintr.pdf">Cross-Core Interrupt Detection: Exploiting User and Virtualized IPIs</a></h3>
+      <p class="authors"><b>Fabian Rauscher</b>, Daniel Gruss</p>
+      <p class="meta"><a href="https://www.sigsac.org/ccs/CCS2024/">CCS &#x27;24 (AR: 16.7%)</a>
+        <span class="files"><a href="papers/uintr.pdf">PDF</a> <a href="bib/rauscher2024ipi.bib">BibTeX</a></span></p>
+    </article>
+    <article class="pub">
+      <h3><a href="papers/snailload.pdf">SnailLoad: Exploiting Remote Network Latency Measurements without JavaScript</a></h3>
+      <p class="authors">Stefan Gast, Roland Czerny, Jonas Juffinger, <b>Fabian Rauscher</b>, Simone Franza, Daniel Gruss</p>
+      <p class="meta"><a href="https://www.usenix.org/conference/usenixsecurity24">USENIX Security &#x27;24 (AR: 18.3%)</a> <a class="badge" href="https://nvd.nist.gov/vuln/detail/CVE-2024-39920">CVE-2024-39920</a>
+        <span class="files"><a href="papers/snailload.pdf">PDF</a> <a href="bib/gast2024snailload.bib">BibTeX</a></span></p>
+    </article>
+    <article class="pub">
+      <h3><a href="papers/webgpu.pdf">Generic and Automated Drive-by GPU Cache Attacks from the Browser</a></h3>
+      <p class="authors">Lukas Giner, Roland Czerny, Christoph Gruber, <b>Fabian Rauscher</b>, Andreas Kogler, Daniel De Almeida Braga, Daniel Gruss</p>
+      <p class="meta">ASIA CCS &#x27;24 (AR: 22.1%) <span class="badge">Best Paper</span>
+        <span class="files"><a href="papers/webgpu.pdf">PDF</a> <a href="bib/giner2024webgpu.bib">BibTeX</a></span></p>
+    </article>
+    <article class="pub">
+      <h3><a href="papers/idleleak.pdf">IdleLeak: Exploiting Idle State Side Effects for Information Leakage</a></h3>
+      <p class="authors"><b>Fabian Rauscher</b>, Andreas Kogler, Jonas Juffinger, Daniel Gruss</p>
+      <p class="meta"><a href="https://www.ndss-symposium.org/ndss2024/">NDSS &#x27;24 (AR: 20.6%)</a>
+        <span class="files"><a href="papers/idleleak.pdf">PDF</a> <a href="bib/rauscher2024idleleak.bib">BibTeX</a></span></p>
+    </article>
+    <h2 class="year" id="y2023">2023</h2>
+    <article class="pub">
+      <h3><a href="papers/dope.pdf">DOPE: DOmain Protection Enforcement with PKS</a></h3>
+      <p class="authors">Lukas Maar, Martin Schwarzl, <b>Fabian Rauscher</b>, Daniel Gruss, Stefan Mangard</p>
+      <p class="meta"><a href="https://www.acsac.org/2023/">ACSAC &#x27;23 (AR: 23.3%)</a>
+        <span class="files"><a href="papers/dope.pdf">PDF</a> <a href="bib/maar2023dope.bib">BibTeX</a></span></p>
+    </article>
+    <h2 class="year" id="y2022">2022</h2>
+    <article class="pub">
+      <h3><a href="papers/masterthesis.pdf">GPU Cache Attacks</a></h3>
+      <p class="authors"><b>Fabian Rauscher</b></p>
+      <p class="meta">Master&#x27;s thesis, Graz University of Technology, November 2022
+        <span class="files"><a href="papers/masterthesis.pdf">PDF</a> <a href="bib/rauscher2022gpu.bib">BibTeX</a></span></p>
+    </article>
+  </section>
+</main>
 
-
-            <footer>
-                <p>&copy; 2026 Fabian Rauscher. <small>Last updated: 2026-10-20.
-                  Template by <a class="title" href="https://andreaskogler.com/">Andreas Kogler</a></small></p>
-
-            </footer>
-
-        </div>
-    </body>
-<!-- We thank Andreas Kogler for the template -->
+<footer>
+  <p>&copy; 2026 Fabian Rauscher &middot; Last updated 2026-10-20</p>
+</footer>
+</body>
 </html>
