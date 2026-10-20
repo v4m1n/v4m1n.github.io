@@ -19,6 +19,14 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
         <title>Fabian Rauscher</title>
+        <meta name="description" content="Fabian Rauscher, postdoc at TU Graz. Low-level systems security: side channels and microarchitectural attacks on CPUs, TEEs, and hypervisors.">
+        <meta property="og:title" content="Fabian Rauscher">
+        <meta property="og:description" content="Postdoc at TU Graz. Low-level systems security: side channels and microarchitectural attacks on CPUs, TEEs, and hypervisors.">
+        <meta property="og:image" content="https://fabianrauscher.com/images/profile.jpg">
+        <meta property="og:url" content="https://fabianrauscher.com/">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+        <link rel="apple-touch-icon" href="images/favicon-192.png">
 
     </head>
     <body data-spy="scroll" data-target="#navbar" data-offset="0">
@@ -33,23 +41,16 @@
             
             <div class="collapse navbar-collapse nav-pills" id="navbar-collapse">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown" id="#">
+                    <li class="nav-item dropdown">
   <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
     Papers
   </a>
-  <div class="dropdown-menu" id="papers">
-    <a class="dropdown-item" href="#papers2026">
-      2026: 2
-    </a>
-    <a class="dropdown-item" href="#papers2025">
-      2025: 7
-    </a>
-    <a class="dropdown-item" href="#papers2024">
-      2024: 4
-    </a>
-    <a class="dropdown-item" href="#papers2023">
-      2023: 1
-    </a>
+  <div class="dropdown-menu" id="papers-menu">
+    <a class="dropdown-item" href="#papers2026">2026</a>
+    <a class="dropdown-item" href="#papers2025">2025</a>
+    <a class="dropdown-item" href="#papers2024">2024</a>
+    <a class="dropdown-item" href="#papers2023">2023</a>
+    <a class="dropdown-item" href="#papers2022">2022</a>
   </div>
 </li>
 
@@ -80,7 +81,7 @@
                     <!-- Image -->
                     <div class="row">
                         <div class="col-xs-12">
-                        <img src="images/profile.jpg" alt="" class="img-fluid rounded-circle">
+                        <img src="images/profile.jpg" alt="Hedgehog illustration" class="img-fluid rounded-circle">
                         </div>
                     </div>
             
@@ -94,13 +95,13 @@
                         </span>
                         
                         <span class="fa-stack fa-lg">
-                        <a href="https://twitter.com/v4m1n">
+                        <a href="https://x.com/v4m1n">
                             <i class="fa fa-twitter fa-stack-1x "></i>
                         </a>
                         </span>
                         
                         <span class="fa-stack fa-lg">
-                        <a href="https://scholar.google.com/citations?user=h-c-Xg8AAAAJ&hl=de&oi=sra">
+                        <a href="https://scholar.google.com/citations?user=h-c-Xg8AAAAJ">
                             <i class="fa fa-google fa-stack-1x"></i>
                         </a>
                         </span>
@@ -111,8 +112,8 @@
                 
                 <!-- Description -->
                 <div class="col-md-7">
-                  <p>I am a PostDoc with CoreSec at the <a href="https://isec.tugraz.at">Institute of Information Security</a> at Graz University of Technology. My advisor was <a href="https://gruss.cc/">Prof. Daniel Gruss</a>. I focus on microarchitectural attacks and side channels.</p>
-                    <p>E-Mail: contact (at) responsible (dot) fyi
+                  <p>I'm a postdoc in the CoreSec group at <a href="https://isec.tugraz.at">TU Graz</a>, where I did my PhD with <a href="https://gruss.cc/">Daniel Gruss</a>. I work on low-level systems security, mainly side channels and microarchitectural attacks on CPUs, trusted execution environments like Intel TDX, and hypervisors. I also teach operating systems, system-level programming, and hypervisor development.</p>
+                    <p>E-Mail: contact (at) responsible (dot) fyi</p>
                 </div>
                 <div class="col-md-2"></div>
             </div>
@@ -138,7 +139,7 @@
     <div class="timeline">
       <div class="row">
         <div class="timeline-date">
-          <span id="papers2025" class="anchor">
+          <span id="papers2026" class="anchor">
           </span>
           <div class="col-xs-1">
             <b class="hi">
@@ -156,7 +157,7 @@
           <div class="col-md-11">
             <i class="fa fa-file">
             </i>
-            <a class="title" href="https://hannesweissteiner.com/pdfs/frost.pdf">
+            <a class="title" href="papers/frost.pdf">
               FROST: Fingerprinting Remotely using OPFS-based SSD Timing
             </a>
             <br>
@@ -178,7 +179,7 @@
           <div class="col-md-11">
             <i class="fa fa-file">
             </i>
-            <a class="title" rel="canonical" href="papers/phdthesis.pdf">
+            <a class="title" href="papers/phdthesis.pdf">
               Advancing CPU Security through Attack Discovery and Systematization - PhD Thesis
             </a>
             <br>
@@ -234,7 +235,7 @@
           <div class="col-md-11">
             <i class="fa fa-file">
             </i>
-            <a class="title" rel="canonical" href="https://tugraz.elsevierpure.com/ws/portalfiles/portal/95282944/main.pdf">
+            <a class="title" href="papers/waitwatcher.pdf">
               WaitWatcher & WaitGuard: Detecting Flush-Based Cache Side-Channels through Spurious Wakeups
             </a>
             <br>
@@ -256,7 +257,7 @@
           <div class="col-md-11">
             <i class="fa fa-file">
             </i>
-            <a class="title" href="https://florian.adamsky.it/research/publications/2025/2025-Verifying_DRAM_Addressing_in_Software_preprint.pdf">
+            <a class="title" href="papers/dramaddressing.pdf">
               Verifying DRAM Addressing in Software
             </a>
             <br>
@@ -278,7 +279,7 @@
           <div class="col-md-11">
             <i class="fa fa-file">
             </i>
-            <a class="title" rel="canonical" href="papers/tdxploit.pdf">
+            <a class="title" href="papers/tdxploit.pdf">
               TDXploit: Novel Techniques for Single-Stepping and Cache Attacks on Intel TDX
             </a>
             <br>
@@ -308,7 +309,7 @@
           <div class="col-md-11">
             <i class="fa fa-file">
             </i>
-            <a class="title" href="https://hannesweissteiner.xyz/pdfs/teecorrelate.pdf">
+            <a class="title" href="papers/teecorrelate.pdf">
               TEEcorrelate: An Information-Preserving Defense against Performance-Counter Attacks on TEEs
             </a>
             <br>
@@ -330,7 +331,7 @@
           <div class="col-md-11">
             <i class="fa fa-file">
             </i>
-            <a class="title" rel="canonical" href="papers/powerkernel.pdf">
+            <a class="title" href="papers/powerkernel.pdf">
               Systematic Analysis of Kernel Security Performance and Energy Costs
             </a>
             <br>
@@ -352,7 +353,7 @@
           <div class="col-md-11">
             <i class="fa fa-file">
             </i>
-            <a class="title" rel="canonical" href="papers/demote.pdf">
+            <a class="title" href="papers/demote.pdf">
               A Systematic Evaluation of Novel and Existing Cache Side Channels
             </a>
             <br>
@@ -374,7 +375,7 @@
           <div class="col-md-11">
             <i class="fa fa-file">
             </i>
-            <a class="title" href="https://www.jonasjuffinger.com/papers/ssd.pdf">
+            <a class="title" href="papers/ssd.pdf">
               Secret Spilling Drive: Leaking User Behavior through SSD Contention
             </a>
             <br>
@@ -409,7 +410,7 @@
           <div class="col-md-11">
             <i class="fa fa-file">
             </i>
-            <a class="title" rel="canonical" href="papers/uintr.pdf">
+            <a class="title" href="papers/uintr.pdf">
               Cross-Core Interrupt Detection: Exploiting User and Virtualized IPIs
             </a>
             <br>
@@ -431,7 +432,7 @@
           <div class="col-md-11">
             <i class="fa fa-file">
             </i>
-            <a class="title" href="https://stefangast.eu/papers/snailload.pdf">
+            <a class="title" href="papers/snailload.pdf">
               SnailLoad: Exploiting Remote Network Latency Measurements without JavaScript
             </a>
             <br>
@@ -457,16 +458,16 @@
           <div class="col-md-11">
             <i class="fa fa-file">
             </i>
-            <a class="title" href="https://ginerlukas.com/publications/papers/WebGPUAttacks.pdf">
+            <a class="title" href="papers/webgpu.pdf">
               Generic and Automated Drive-by GPU Cache Attacks from the Browser
             </a>
             <br>
             <small >
               Lukas Giner, Roland Czerny, Christoph Gruber, <b>Fabian Rauscher</b>, Andreas Kogler, Daniel De Almeida Braga, Daniel Gruss
               <br>
-              <a class="title" href="https://asiaccs2024.sutd.edu.sg/" style="color:#000000;">
+              Award: Best Paper
+              <br>
               ASIA CCS '24 (AR: 22.1%)
-              </a>
               <br>
             </small>
           </div>
@@ -479,7 +480,7 @@
           <div class="col-md-11">
             <i class="fa fa-file">
             </i>
-            <a class="title" rel="canonical" href="papers/idleleak.pdf">
+            <a class="title" href="papers/idleleak.pdf">
               IdleLeak: Exploiting Idle State Side Effects for Information Leakage
             </a>
             <br>
@@ -514,7 +515,7 @@
           <div class="col-md-11">
             <i class="fa fa-file">
             </i>
-            <a class="title" href="https://lukasmaar.github.io/papers/acsac23-dope.pdf">
+            <a class="title" href="papers/dope.pdf">
               DOPE: DOmain Protection Enforcement with PKS
             </a>
             <br>
@@ -549,12 +550,14 @@
           <div class="col-md-11">
             <i class="fa fa-file">
             </i>
-            <a class="title" rel="canonical" href="papers/masterthesis.pdf">
-              GPU Cache Attacks - Master Thesis
+            <a class="title" href="papers/masterthesis.pdf">
+              GPU Cache Attacks - Master's Thesis
             </a>
             <br>
             <small>
-              Master's Thesis, Graz University of Technology
+              <b>Fabian Rauscher</b>
+              <br>
+              Graz University of Technology, November 2022
             </small>
           </div>
         </div>
@@ -567,7 +570,7 @@
 
 
             <footer>
-                <p>&copy; 2024 Fabian Rauscher. <small>Last updated: 2026-05-20.
+                <p>&copy; 2026 Fabian Rauscher. <small>Last updated: 2026-10-20.
                   Template by <a class="title" href="https://andreaskogler.com/">Andreas Kogler</a></small></p>
 
             </footer>
