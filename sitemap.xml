@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://fabianrauscher.com/</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://fabianrauscher.com/papers/demote.pdf</loc><lastmod>2026-08-24</lastmod></url>
+  <url><loc>https://fabianrauscher.com/papers/dope.pdf</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://fabianrauscher.com/papers/dramaddressing.pdf</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://fabianrauscher.com/papers/frost.pdf</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://fabianrauscher.com/papers/idleleak.pdf</loc><lastmod>2026-08-24</lastmod></url>
+  <url><loc>https://fabianrauscher.com/papers/masterthesis.pdf</loc><lastmod>2026-08-24</lastmod></url>
+  <url><loc>https://fabianrauscher.com/papers/phdthesis.pdf</loc><lastmod>2026-08-24</lastmod></url>
+  <url><loc>https://fabianrauscher.com/papers/powerkernel.pdf</loc><lastmod>2026-08-24</lastmod></url>
+  <url><loc>https://fabianrauscher.com/papers/snailload.pdf</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://fabianrauscher.com/papers/ssd.pdf</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://fabianrauscher.com/papers/tdxploit.pdf</loc><lastmod>2026-08-24</lastmod></url>
+  <url><loc>https://fabianrauscher.com/papers/teecorrelate.pdf</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://fabianrauscher.com/papers/telescope.pdf</loc><lastmod>2026-08-24</lastmod></url>
+  <url><loc>https://fabianrauscher.com/papers/uintr.pdf</loc><lastmod>2026-08-24</lastmod></url>
+  <url><loc>https://fabianrauscher.com/papers/waitwatcher.pdf</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://fabianrauscher.com/papers/webgpu.pdf</loc><lastmod>2026-10-20</lastmod></url>
 </urlset>
