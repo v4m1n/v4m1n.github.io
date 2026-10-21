@@ -34,6 +34,17 @@
 <main>
   <p class="bio">I'm an offensive security researcher and postdoc in the CoreSec group at <a href="https://isec.tugraz.at">TU Graz</a>, where I did my PhD with <a href="https://gruss.cc/">Daniel Gruss</a>. I work on low-level systems security, mainly side channels and microarchitectural attacks on CPUs, trusted execution environments like Intel TDX, and hypervisors. I also teach operating systems, system-level programming, and hypervisor development.</p>
 
+  <section id="advisories">
+    <div class="section-head">
+      <h2>Security Advisories</h2>
+    </div>
+    <ul class="cves">
+      <li><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-20613">CVE-2025-20613</a> <span class="what">Intel TDX firmware</span> <span class="refs"><a class="badge" href="https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01312.html">INTEL-SA-01312</a> <a href="papers/tdxploit.pdf">Paper</a></span></li>
+      <li><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-36353">CVE-2024-36353</a> <span class="what">AMD GPU memory leakage</span> <span class="refs"><a class="badge" href="https://www.amd.com/en/resources/product-security/bulletin/amd-sb-6019.html">AMD-SB-6019</a></span></li>
+      <li><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-39920">CVE-2024-39920</a> <span class="what">TCP timing side channel</span> <span class="refs"><a class="badge" href="https://github.com/isec-tugraz/SnailLoad">Code</a> <a href="papers/snailload.pdf">Paper</a></span></li>
+    </ul>
+  </section>
+
   <section id="publications">
     <div class="section-head">
       <h2>Publications</h2>
@@ -76,13 +87,13 @@
       <h3><a href="papers/tdxploit.pdf">TDXploit: Novel Techniques for Single-Stepping and Cache Attacks on Intel TDX</a></h3>
       <p class="authors"><b>Fabian Rauscher</b>, Luca Wilke, Hannes Weissteiner, Thomas Eisenbarth, Daniel Gruss</p>
       <p class="meta"><a href="https://www.usenix.org/conference/usenixsecurity25">USENIX Security &#x27;25 (AR: 17.1%)</a> <a class="badge" href="https://www.usenix.org/sites/default/files/sec25_honorable_mentions.pdf">Distinguished Paper Award, Honorable Mention</a> <a class="badge" href="https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01312.html">CVE-2025-20613</a>
-        <span class="files"><a href="papers/tdxploit.pdf">PDF</a> <a href="bib/rauscher2025tdxploit.bib">BibTeX</a></span></p>
+        <span class="files"><a href="papers/tdxploit.pdf">PDF</a> <a href="bib/rauscher2025tdxploit.bib">BibTeX</a> <a href="https://github.com/isec-tugraz/TDXploit">Code</a> <a href="https://doi.org/10.5281/zenodo.15536637">Artifact</a></span></p>
     </article>
     <article class="pub">
       <h3><a href="papers/teecorrelate.pdf">TEEcorrelate: An Information-Preserving Defense against Performance-Counter Attacks on TEEs</a></h3>
       <p class="authors">Hannes Weissteiner, <b>Fabian Rauscher</b>, Robin Leander Schröder, Jonas Juffinger, Stefan Gast, Jan Wichelmann, Thomas Eisenbarth, Daniel Gruss</p>
       <p class="meta"><a href="https://www.usenix.org/conference/usenixsecurity25">USENIX Security &#x27;25 (AR: 17.1%)</a>
-        <span class="files"><a href="papers/teecorrelate.pdf">PDF</a> <a href="bib/weissteiner2025teecorrelate.bib">BibTeX</a></span></p>
+        <span class="files"><a href="papers/teecorrelate.pdf">PDF</a> <a href="bib/weissteiner2025teecorrelate.bib">BibTeX</a> <a href="https://doi.org/10.5281/zenodo.15699920">Artifact</a></span></p>
     </article>
     <article class="pub">
       <h3><a href="papers/powerkernel.pdf">Systematic Analysis of Kernel Security Performance and Energy Costs</a></h3>
@@ -113,7 +124,7 @@
       <h3><a href="papers/snailload.pdf">SnailLoad: Exploiting Remote Network Latency Measurements without JavaScript</a></h3>
       <p class="authors">Stefan Gast, Roland Czerny, Jonas Juffinger, <b>Fabian Rauscher</b>, Simone Franza, Daniel Gruss</p>
       <p class="meta"><a href="https://www.usenix.org/conference/usenixsecurity24">USENIX Security &#x27;24 (AR: 18.3%)</a> <a class="badge" href="https://nvd.nist.gov/vuln/detail/CVE-2024-39920">CVE-2024-39920</a>
-        <span class="files"><a href="papers/snailload.pdf">PDF</a> <a href="bib/gast2024snailload.bib">BibTeX</a></span></p>
+        <span class="files"><a href="papers/snailload.pdf">PDF</a> <a href="bib/gast2024snailload.bib">BibTeX</a> <a href="https://github.com/isec-tugraz/SnailLoad">Code</a></span></p>
     </article>
     <article class="pub">
       <h3><a href="papers/webgpu.pdf">Generic and Automated Drive-by GPU Cache Attacks from the Browser</a></h3>
